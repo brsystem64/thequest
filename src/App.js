@@ -64,6 +64,7 @@ function updateDataBattle(){
 
 if(!started){
   if(player.hp <= 0){
+    alert('Você morreu!');
     window.location.reload();
   }
   return(  
@@ -94,7 +95,7 @@ return (
   <div className="row ">
     <div className="col l4 off-l4 s12">
     <center>
-      <button onClick={handleBattle}> Atacar </button>
+      <button onClick={handleBattle}> Batalhar </button>
       <button onClick={handleRun}> Fugir </button>
       <button onClick={handlePotion}> Usar Poção </button>
     </center>

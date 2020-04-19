@@ -39,15 +39,17 @@ function run(player, enemy, callback){
   attack(enemy, player, callback);
 }
   
-function isEndGame(player){
+ function isEndGame(player){
   return isDead(player);
 };
 
-module.exports ={
-   attack, 
-   isDead, 
-   run, 
-   isEndGame, 
-   getPotions,
-   enemyGenerator
+module.exports = {
+
+    attack, 
+    isDead, 
+    run, 
+    isEndGame, 
+    getPotions,
+    enemyGenerator
+
 }

@@ -20,40 +20,37 @@ export default (props) =>{
 
         <div className="row">
             <div className="col l4 off-l4 s12">
-                <strong> Regras </strong>
-                <table>
-                    <tr>
-                    <td className="life"><img src="./icons/attributes/life.png"/></td>
-                    <td className="left"> <span>HP, sua vida.</span></td>
-                    </tr>
-                    <tr>
-                    <td className="sword"><img src="./icons/attributes/sword.png"/></td>
-                    <td className="left"> <span>Ataque, sua força.</span></td>
-                    </tr>
-                    <tr>
-                    <td className="shield"><img src="./icons/attributes/shield.png"/></td>
-                    <td className="left"> <span>Defesa, sua proteção.</span></td>
-                    </tr>
-                    <tr>
-                    <td className="potion"><img src="./icons/attributes/potion.png"/></td>
-                    <td className="left"> <span>Poção, sua regeneração.</span></td>
-                    </tr>
-                    <tr>
-                    <td className="gold"><img src="./icons/attributes/gold.png"/></td>
-                    <td className="left"> <span>Gold, sua riqueza.</span></td>
-                    </tr>
-                </table>
-
-                <br/>
-                <span>° 3 Batalhas = 1 Level</span>
-                <br/>
-                <span>° HP = 0? morte.</span>
-                <br/>
-                <span>° Fugir da batalha? O custo é o dano inimigo.</span>
-                <br/>
-                <span>° The Quest é um RPG de turno. O inimigo sempre joga após o seu ataque ou fuga.</span>
+                <img width="400px" src="./tutorial.png"></img>
+                <strong>Regras</strong>
+                <hr/>
+                <strong>Batalhar:</strong>
+                <span>
+                    o valor de dano é subtraido da vida do jogador e dá criatura.
+                </span>
+                <p/>
+                <strong>Fugir:</strong>
+                <span>
+                    Inimigo é alterado, porém jogador leva o dano inimigo.
+                    Exceto quando o dano inimigo é 0.
+                </span>   
+                <p/>
+                <strong>Usar Poção:</strong>
+                <span>
+                   Recupera até 3 pontos de Vida.
+                </span>    
+                <hr/>         
             </div>
-        </div>     
+        </div>   
+
+        <div className="row">
+
+            <center>
+            <span>Git @BRSystem64</span>
+            <br/>
+            <span>Os icones usados podem ser encontrados em  </span>
+            <a href="https://game-icons.net">games-icons.net</a> 
+            </center>
+        </div>  
     </>
     );
 }
